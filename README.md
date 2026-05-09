@@ -73,21 +73,21 @@ smart-city-traffic-pipeline/
 
 ---
 
-## 📋 Project Overview
+##  Project Overview
 
 A production-grade data pipeline implementing **Lambda Architecture** to process real-time traffic data from IoT sensors across Colombo city. The system detects traffic congestion in real-time while generating comprehensive daily reports for traffic management decisions.
 
 ### Key Features
 
-- ✅ **Real-time Stream Processing**: Detects congestion within seconds
-- ✅ **Batch Processing**: Generates nightly analytical reports  
-- ✅ **Dual-Layer Storage**: Hot path (alerts) + Cold path (historical)
-- ✅ **Scalable Architecture**: Handles 4+ sensors, expandable to hundreds
-- ✅ **Automated Alerts**: Critical traffic notifications via Kafka
+-  **Real-time Stream Processing**: Detects congestion within seconds
+-  **Batch Processing**: Generates nightly analytical reports  
+-  **Dual-Layer Storage**: Hot path (alerts) + Cold path (historical)
+-  **Scalable Architecture**: Handles 4+ sensors, expandable to hundreds
+-  **Automated Alerts**: Critical traffic notifications via Kafka
 
 ---
 
-## 🏗️ Architecture
+##  Architecture
 
 **Lambda Architecture Components:**
 
@@ -124,7 +124,7 @@ A production-grade data pipeline implementing **Lambda Architecture** to process
 
 ---
 
-## 🛠️ Technology Stack
+##  Technology Stack
 
 | Component | Technology | Purpose |
 |-----------|-----------|---------|
@@ -145,7 +145,7 @@ A production-grade data pipeline implementing **Lambda Architecture** to process
 
 ---
 
-## 📁 Project Structure
+##  Project Structure
 
 ```
 smart-city-traffic-pipeline/
@@ -174,20 +174,19 @@ smart-city-traffic-pipeline/
 
 ---
 
-## 🚀 Quick Start
+##  Quick Start
 
 ### Prerequisites
 
 - Docker Desktop 4.0+
 - Python 3.9+
-- 8GB RAM minimum
 
 ### 1. Start Infrastructure
 
 ```bash
 # Clone repository
-git clone <your-repo-url>
-cd smart-city-traffic-pipeline
+git clone https://github.com/ashanwijebandara/big-data-mini-project.git
+cd big-data-mini-project
 
 # Start all services
 docker-compose up -d
@@ -241,7 +240,7 @@ python scripts/generate_report_manual.py
 
 ---
 
-## 📊 Monitoring & Verification
+##  Monitoring & Verification
 
 ### Check Database
 
@@ -286,7 +285,7 @@ docker exec kafka kafka-console-consumer \
 
 ---
 
-## 🔧 Configuration
+##  Configuration
 
 ### Congestion Threshold
 
@@ -309,7 +308,7 @@ SENSORS = {
 
 ---
 
-## 📈 Performance Metrics
+##  Performance Metrics
 
 **Observed System Performance:**
 
@@ -327,7 +326,7 @@ SENSORS = {
 
 ---
 
-## 🧪 Testing
+##  Testing
 
 ```bash
 # Test all connections
@@ -341,13 +340,13 @@ docker exec -it postgres psql -U trafficuser -d traffic_db
 ```
 
 Expected results:
-- ✅ 240+ raw records in `traffic_raw` table
-- ✅ 10-30 alerts in `traffic_alerts` table
-- ✅ Console showing congestion detections
+-  240+ raw records in `traffic_raw` table
+-  10-30 alerts in `traffic_alerts` table
+-  Console showing congestion detections
 
 ---
 
-## 🛑 Shutdown
+##  Shutdown
 
 ```bash
 # Stop all services
@@ -359,7 +358,7 @@ docker-compose down -v
 
 ---
 
-## 📝 Event Time vs Processing Time
+##  Event Time vs Processing Time
 
 **Implementation:**
 
@@ -376,7 +375,7 @@ docker-compose down -v
 
 ---
 
-## 🔒 Ethics & Data Governance
+##  Ethics & Data Governance
 
 ### Privacy Considerations
 
@@ -437,7 +436,7 @@ python producers/traffic_sensor.py  # Look for connection errors
 
 ---
 
-## 📚 References
+##  References
 
 - [Apache Kafka Documentation](https://kafka.apache.org/documentation/)
 - [Apache Airflow](https://airflow.apache.org/)
@@ -446,31 +445,19 @@ python producers/traffic_sensor.py  # Look for connection errors
 
 ---
 
-## 👥 Contributors
+##  Contributors
 
-- **[Your Name]** - System Design & Implementation
+- **[EG/2020/4003 - Kadanage K.D.P.H]** 
+- **[EG/2020/4078 - Morawaliyadda M.G.H.S.M]** 
+- **[EG/2020/4289 - Wijebandara P.A.I]** 
 - **Course**: Applied Big Data Engineering
-- **Institution**: [Your University]
-- **Date**: March 2026
+- **Institution**: University of Ruhuna, Faculty of Engineering
+- **Date**: May 2026
 
 ---
 
-## 📄 License
+##  License
 
 This project is for educational purposes as part of the Applied Big Data Engineering course.
 
 ---
-
-## 🎯 Future Enhancements
-
-1. **Machine Learning**: Predict congestion before it occurs
-2. **Real-time Dashboard**: Web UI with live traffic maps
-3. **Mobile Alerts**: SMS/Push notifications for critical events
-4. **Multi-city Support**: Expand beyond Colombo
-5. **Weather Integration**: Correlate traffic with weather data
-6. **Spark Integration**: Full Spark Structured Streaming implementation
-
----
-
-**Status**: ✅ Production Ready (Demo Environment)  
-**Last Updated**: March 5, 2026
