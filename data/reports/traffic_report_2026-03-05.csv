@@ -1,0 +1,5 @@
+sensor_id,location,peak_hour,avg_vehicles,avg_speed,congestion_events,recommendation,priority
+B,Baseline Road Junction,00:00,39.4,33.6,476,URGENT: Deploy 2 traffic officers,HIGH
+C,Duplication Road Junction,00:00,37.9,34.8,386,URGENT: Deploy 2 traffic officers,HIGH
+D,Marine Drive Junction,00:00,39.4,33.7,150,URGENT: Deploy 2 traffic officers,HIGH
+A,Galle Road Junction,00:00,45.0,25.0,0,Monitor only,LOW
